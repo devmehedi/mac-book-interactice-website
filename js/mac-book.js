@@ -60,7 +60,7 @@ document.getElementById("storage-512gb").addEventListener("click", function () {
     costTotal("ssd", 100);
 });
 document.getElementById("storage-1tb").addEventListener("click", function () {
-    costTotal("ssd", 200);
+    costTotal("ssd", 180);
 });
 
 // this is for delivery
