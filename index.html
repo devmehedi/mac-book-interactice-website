@@ -31,20 +31,29 @@
                             <div>
                                 <div class="my-5">
                                     <h5>Memory</h5>
-                                    <button type="button" class="btn border rounded btn-sm">8GB unified memory</button>
-                                    <button type="button" class="btn border rounded btn-sm">16GB unified memory</button>
+                                    <button onclick="console.log(0)" id="first-memory" type="button"
+                                        class="btn border rounded btn-sm">8GB unified
+                                        memory</button>
+                                    <button id="last-memory" type="button" class="btn border rounded btn-sm">16GB
+                                        unified
+                                        memory</button>
                                 </div>
                                 <div class="my-5">
                                     <h5>Storage</h5>
-                                    <button type="button" class="btn border rounded btn-sm">256GB SSD Storage</button>
-                                    <button type="button" class="btn border rounded btn-sm">512GB SSD Storage</button>
-                                    <button type="button" class="btn border rounded btn-sm">1TB SSD Storage</button>
+                                    <button id="storage-256gb" type="button" class="btn border rounded btn-sm">256GB SSD
+                                        Storage</button>
+                                    <button id="storage-512gb" type="button" class="btn border rounded btn-sm">512GB SSD
+                                        Storage</button>
+                                    <button id="storage-1tb" type="button" class="btn border rounded btn-sm">1TB SSD
+                                        Storage</button>
                                 </div>
                                 <div class="my-5">
                                     <h5>Choose your delivery option</h5>
-                                    <button type="button" class="btn border rounded btn-sm">Fridat, Aug 25 Free prime
+                                    <button id="late-delivery" type="button" class="btn border rounded btn-sm">Fridat,
+                                        Aug 25 Free prime
                                         delivery</button>
-                                    <button type="button" class="btn border rounded btn-sm">Friday, Aug 21 Delivery
+                                    <button id="fast-delivery" type="button" class="btn border rounded btn-sm">Friday,
+                                        Aug 21 Delivery
                                         charge
                                         $20</button>
                                 </div>
@@ -53,29 +62,29 @@
 
                         <!-- total price table section -->
                         <section>
-                            <table class="table fw-bold">
+                            <table class="table fw-bold w-50">
                                 <tbody>
                                     <tr>
                                         <td>Best price</td>
-                                        <td>$1299</td>
+                                        <td>$<span id="best-price">1299</span></td>
                                     </tr>
                                     <tr>
                                         <td>Extra memory cost</td>
-                                        <td>$0</td>
+                                        <td>$<span id="memory-cost">0</span></td>
                                     </tr>
                                     <tr>
                                         <td>Extra storage cost</td>
-                                        <td>$0</td>
+                                        <td>$<span id="storage-cost">0</span> </td>
                                     </tr>
                                     <tr>
                                         <td>Delivery charge</td>
-                                        <td>$0</td>
+                                        <td>$<span id="delivery-cost">0</span></td>
                                     </tr>
                                 </tbody>
                                 <tfoot>
                                     <tr>
                                         <td>Total Price</td>
-                                        <td>$1299</td>
+                                        <td>$<span id="total-cost">1299</span> </td>
                                     </tr>
                                 </tfoot>
                             </table>
@@ -84,9 +93,9 @@
                         <!-- coupon code  -->
                         <div>
                             <h5>Add promo code</h5>
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control">
-                                <button class="btn btn-outline-secondary bg-info text-black"
+                            <div class="input-group mb-3 w-50">
+                                <input id="input-cupon" type="text" class="form-control">
+                                <button id="cupon-btn" class="btn btn-outline-warning bg-primary text-white fw-bold"
                                     type="button">Apply</button>
                             </div>
                         </div>
@@ -94,9 +103,9 @@
                 </div>
             </div>
         </section>
-        <hr>
+        <hr class="text-dark">
         <footer>
-            <h2 class="text-center mb-5">Total: $1299</h2>
+            <h2 class="text-center mb-5">Total: $<span id="all-price-bottom">1299</span> </h2>
         </footer>
     </main>
 
